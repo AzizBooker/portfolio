@@ -1,0 +1,20 @@
+*{
+    transition: color 200ms ease-in-out;
+}
+body{
+    background-color: $eerieBlack;
+    color: $silverChalice;
+
+}
+h1{
+    font-size: 6rem;
+    
+}
+a{
+    color: $silverChalice;
+    text-decoration: none;
+    &:hover{
+        color: $silverChalice2;
+        text-decoration: none;
+    }
+}

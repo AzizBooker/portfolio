@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-weight: bolder;
+    #logo_link{
+        color: $silverChalice;
+        &:hover{
+            color: $silverChalice2;
+        }
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        margin-left: 1rem;
+        padding-right: 1rem;
+        list-style: none;
+        a {
+          color: $silverChalice;
+          &:hover {
+            color: $silverChalice2;
+          }
+        }
+        &:nth-child(4) {
+          a {
+            color: $russet;
+            &:hover{
+                color: $russet2;
+            }
+          }
+        }
+      }
+    }
+  }

@@ -2,8 +2,12 @@
     height: 105vh;
     h1{
         margin-top: 3rem;
+        line-height: .9;
         a{
             font-family: $fontMontserrat;
+        }
+        @include breakpoint-down('md'){
+            text-align: center;
         }
     }
   a{
@@ -14,6 +18,15 @@
       }
   }
   h4{
-      margin-top: 1rem;
+      margin-top: 3rem;
   }
+}
+
+.hero_about{
+    h2{
+        color: $russet;
+        &:hover{
+            color: $russet2;
+        }
+    }
 }

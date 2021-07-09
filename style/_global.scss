@@ -4,6 +4,9 @@
     font-weight: 500;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: $eerieBlack;
     color: $silverChalice;

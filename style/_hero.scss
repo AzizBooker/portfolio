@@ -1,8 +1,19 @@
 .hero {
+    height: 105vh;
+    h1{
+        margin-top: 3rem;
+        a{
+            font-family: $fontMontserrat;
+        }
+    }
   a{
       color: $russet;
+      font-family: $fontMukta;
       &:hover{
           color: $russet2;
       }
+  }
+  h4{
+      margin-top: 1rem;
   }
 }

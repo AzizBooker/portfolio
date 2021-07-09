@@ -1,5 +1,8 @@
 *{
     transition: color 200ms ease-in-out;
+    font-family: $fontMukta;
+    font-weight: 500;
+    
 }
 body{
     background-color: $eerieBlack;
@@ -7,11 +10,40 @@ body{
 
 }
 h1{
-    font-size: 6rem;
     
+    font-size: 7rem;
+    a{
+        font-size: 7rem;
+    }
+    font-family: $fontMontserrat;
+    @include breakpoint-down('small'){
+        font-size: 5rem;
+        a{
+            font-size: 5rem;
+        }
+    }
+}
+h2{
+    font-family: $fontMontserrat;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+    a{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    @include breakpoint-down('small'){
+        font-size: 1.2rem;
+        a{
+            font-size: 1.3rem;
+        }
+    }
 }
 a{
     color: $silverChalice;
+    font-size: 1.3rem;
     text-decoration: none;
     &:hover{
         color: $silverChalice2;

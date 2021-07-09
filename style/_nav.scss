@@ -2,8 +2,13 @@
     display: flex;
     
     justify-content: space-between;
-    margin-top: 1rem;
+    padding-top: 1rem;
     font-weight: bolder;
+    .desktop_menu{
+        @include breakpoint-down('small'){
+           visibility: hidden; 
+        }
+    }
     #logo_link{
         color: $silverChalice;
         &:hover{
@@ -11,12 +16,17 @@
         }
     }
     ul {
+        
       display: flex;
       justify-content: space-around;
       li {
         margin-left: 1rem;
-        padding-right: 1rem;
+       margin-right: 1rem;
         list-style: none;
+        @include breakpoint-down('medium'){
+            margin-left: .4rem;
+            margin-right: .4rem;
+        }
         a {
           color: $silverChalice;
           &:hover {

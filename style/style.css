@@ -91,6 +91,22 @@ a:hover {
   color: #f2f2f2;
 }
 
+.nav #logo_link p {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.nav #logo_link span {
+  color: #CF5C36;
+  font-size: 2rem;
+  margin-top: .4rem;
+  margin-left: .1rem;
+}
+
+.nav #logo_link span:hover {
+  color: #FF5C36;
+}
+
 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,11 +141,11 @@ a:hover {
 }
 
 .nav ul li:nth-child(4) a:hover {
-  color: #eF5C36;
+  color: #FF5C36;
 }
 
 .hero {
-  height: 105vh;
+  height: 100vh;
 }
 
 .hero h1 {
@@ -153,24 +169,18 @@ a:hover {
 }
 
 .hero a:hover {
-  color: #eF5C36;
+  color: #FF5C36;
 }
 
 .hero h4 {
   margin-top: 3rem;
 }
 
-.hero_about h2 {
-  color: #CF5C36;
-}
-
-.hero_about h2:hover {
-  color: #eF5C36;
-}
-
 .services {
   background-color: #1a1a1a;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 60vh;
 }
 
 .services h2 {
@@ -187,5 +197,44 @@ a:hover {
 .services p {
   color: #cccccc;
   text-align: center;
+}
+
+.testimonial {
+  margin-top: 3rem;
+}
+
+.testimonial figure {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.testimonial blockquote h3::before {
+  content: '\201C';
+}
+
+.testimonial blockquote h3::after {
+  content: '\201D';
+}
+
+.hero_about h2 {
+  color: #CF5C36;
+}
+
+.hero_about h2:hover {
+  color: #FF5C36;
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding-top: 1rem;
+}
+
+footer .footer_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

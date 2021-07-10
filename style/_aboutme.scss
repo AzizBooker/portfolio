@@ -1,0 +1,9 @@
+
+.hero_about{
+    h2{
+        color: $russet;
+        &:hover{
+            color: $russet2;
+        }
+    }
+}

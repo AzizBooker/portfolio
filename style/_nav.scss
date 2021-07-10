@@ -14,7 +14,25 @@
         &:hover{
             color: $silverChalice2;
         }
+        p{
+          font-size: 2rem;
+          font-weight: bolder;
+        }
+        span{
+          color: $russet;
+          font-size: 2rem;
+          margin-top: .4rem;
+          margin-left: .1rem;
+          &:hover{
+            color: $russet2 ;
+          }
+        }
+
     }
+    #logo_p{
+      
+    }
+  
     ul {
         
       display: flex;

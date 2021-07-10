@@ -1,0 +1,18 @@
+.testimonial{
+    
+        margin-top: 3rem;
+
+figure{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+blockquote h3::before {
+    content: '\201C'; //Unicode for left quotation
+}
+
+blockquote h3::after {
+    content: '\201D';  //Unicode for right quotation
+}
+
+}

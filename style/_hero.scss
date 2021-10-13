@@ -1,23 +1,48 @@
 .hero {
     height: 100vh;
+
+    &_text{
+        position:absolute;
+        top: 30%;
+        margin: 0 auto;
+        
+    }
+    h1,span{
+        font-size: 4rem;
+    }
     h1{
-        margin-top: 3rem;
+        
+        color:$eerieBlack3;
+        padding-bottom: 2rem;
         line-height: .9;
-        a{
+        line-height: 5rem;
+        animation: change 1.4s 4s ease-in both;
+        
+        @keyframes change {
+            from {color: $silverChalice2}
+            to{ color:$eerieBlack3}
+            
+        }
+        span{
             font-family: $fontMontserrat;
         }
         @include breakpoint-down('md'){
             text-align: center;
         }
     }
-  a{
+  span{
+      cursor: pointer;
       color: $russet;
       font-family: $fontMukta;
       &:hover{
+          transition: ease-in 200ms;
           color: $russet2;
+          font-size: 4.2rem;
       }
+      
   }
   h4{
       margin-top: 3rem;
   }
+ 
 }

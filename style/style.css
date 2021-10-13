@@ -104,7 +104,7 @@ a:hover {
 }
 
 .nav #logo_link span:hover {
-  color: #FF5C36;
+  color: #ff5029;
 }
 
 .nav ul {
@@ -141,19 +141,51 @@ a:hover {
 }
 
 .nav ul li:nth-child(4) a:hover {
-  color: #FF5C36;
+  color: #ff5029;
 }
 
 .hero {
   height: 100vh;
 }
 
-.hero h1 {
-  margin-top: 3rem;
-  line-height: .9;
+.hero_text {
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
 }
 
-.hero h1 a {
+.hero h1, .hero span {
+  font-size: 4rem;
+}
+
+.hero h1 {
+  color: #1f1f1f;
+  padding-bottom: 2rem;
+  line-height: .9;
+  line-height: 5rem;
+  -webkit-animation: change 1.4s 4s ease-in both;
+          animation: change 1.4s 4s ease-in both;
+}
+
+@-webkit-keyframes change {
+  from {
+    color: #f2f2f2;
+  }
+  to {
+    color: #1f1f1f;
+  }
+}
+
+@keyframes change {
+  from {
+    color: #f2f2f2;
+  }
+  to {
+    color: #1f1f1f;
+  }
+}
+
+.hero h1 span {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -163,13 +195,17 @@ a:hover {
   }
 }
 
-.hero a {
+.hero span {
+  cursor: pointer;
   color: #CF5C36;
   font-family: "Mukta", sans-serif;
 }
 
-.hero a:hover {
-  color: #FF5C36;
+.hero span:hover {
+  -webkit-transition: ease-in 200ms;
+  transition: ease-in 200ms;
+  color: #ff5029;
+  font-size: 4.2rem;
 }
 
 .hero h4 {
@@ -216,12 +252,18 @@ a:hover {
   content: '\201D';
 }
 
-.hero_about h2 {
+.about-me {
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+}
+
+.about-me h2 {
   color: #CF5C36;
 }
 
-.hero_about h2:hover {
-  color: #FF5C36;
+.about-me h2:hover {
+  color: #ff5029;
 }
 
 footer {

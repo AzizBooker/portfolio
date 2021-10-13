@@ -7,15 +7,12 @@
         margin: 0 auto;
         
     }
-    h1,span{
-        font-size: 4rem;
-    }
     h1{
         
         color:$eerieBlack3;
         padding-bottom: 2rem;
         line-height: .9;
-        line-height: 5rem;
+        line-height: 6rem;
         animation: change 1.4s 4s ease-in both;
         
         @keyframes change {

@@ -10,19 +10,22 @@ html{
 body{
     background-color: $eerieBlack;
     color: $silverChalice;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
 }
 h1{
     
-    font-size: 7rem;
+    font-size: 4rem;
+    color: $russet;
     a{
-        font-size: 7rem;
+        font-size: 4rem;
     }
     font-family: $fontMontserrat;
     @include breakpoint-down('small'){
-        font-size: 5rem;
+        font-size: 2rem;
         a{
-            font-size: 5rem;
+            font-size: 2rem;
         }
     }
 }
@@ -44,6 +47,9 @@ h4{
         }
     }
 }
+p{
+    font-size: 1.2rem;
+}
 a{
     color: $silverChalice;
     font-size: 1.3rem;
@@ -52,4 +58,8 @@ a{
         color: $silverChalice2;
         text-decoration: none;
     }
+}
+
+.disabled-link{
+    pointer-events: none;
 }

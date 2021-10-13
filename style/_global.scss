@@ -59,7 +59,15 @@ a{
         text-decoration: none;
     }
 }
-
+button{
+    background-color: $eerieBlack;
+    color: $russet;
+    margin-bottom: 1rem;
+    border: .1 solid $eerieBlack2;
+    &:hover{
+        color: $russet2;
+    }
+}
 .disabled-link{
     pointer-events: none;
 }

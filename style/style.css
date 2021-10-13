@@ -73,6 +73,17 @@ a:hover {
   text-decoration: none;
 }
 
+button {
+  background-color: #171717;
+  color: #CF5C36;
+  margin-bottom: 1rem;
+  border: 0.1 solid #1a1a1a;
+}
+
+button:hover {
+  color: #ff5029;
+}
+
 .disabled-link {
   pointer-events: none;
 }

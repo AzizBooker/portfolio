@@ -8,6 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    overflow: hidden;
     background-color: $eerieBlack;
     color: $silverChalice;
     margin-left: 2rem;
@@ -70,4 +71,9 @@ button{
 }
 .disabled-link{
     pointer-events: none;
+}
+
+.absolute-20{
+    position: absolute;
+    top: 20%;
 }

@@ -6,7 +6,7 @@ const aboutMeDefaultText = aboutMe.innerHTML;
 
 const digitalWorld = document.querySelector("#digital-world-link");
 const digitalWorldDefaultText = digitalWorld.innerHTML;
-
+const digitalWorldBackButton=document.querySelector('#digital-world-back')
 const portfolio = document.querySelector("#portfolio-link");
 const portfolioDefaultText = portfolio.innerHTML;
 const portfolioBackButton=document.querySelector('#portfolio-back')
@@ -15,7 +15,8 @@ gsap.defaults({
   delay: 0.1,
   duration: 1,
 });
-
+var introTl=gsap.timeline();
+introTl.from('.hero_text',{opacity:0,x:100,delay:.5})
 var heroTl = gsap.timeline();
 heroTl.pause();
 heroTl.to(".hero_text", { opacity: 0, x: -100 });
@@ -33,6 +34,11 @@ var portfolioTl = gsap.timeline({
   portfolioTl.pause();
   portfolioTl.from(".portfolio", { opacity: 0, x: 100 });
   
+  var digitalWorldTl=gsap.timeline({
+    delay:0.6
+  })
+  digitalWorldTl.pause()
+  digitalWorldTl.from('.digital-world',{opacity:0,x:100})
 //! About Me Event Listener
 aboutMe.addEventListener("click", () => {
   heroTl.play();
@@ -52,8 +58,14 @@ aboutMe.innerHTML = aboutMeDefaultText;
 });
 //! Digital World Portfolio Event Listener
 digitalWorld.addEventListener("click", () => {
-  tl.play();
+  console.log('digttal world click')
+  heroTl.play();
+  digitalWorldTl.play()
 });
+digitalWorldBackButton.addEventListener('click',()=>{
+  digitalWorldTl.reverse()
+  setTimeout(()=>{heroTl.reverse()},600)
+})
 
 digitalWorld.addEventListener("mouseover", () => {
   digitalWorld.innerHTML = "Do you need a  Website?";

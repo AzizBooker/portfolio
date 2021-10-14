@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   background-color: #171717;
   color: #cccccc;
   margin-left: 2rem;
@@ -88,82 +89,14 @@ button:hover {
   pointer-events: none;
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 1rem;
-  font-weight: bolder;
+.absolute-20 {
+  position: absolute;
+  top: 20%;
 }
 
-@media (max-width: 39.9375em) {
-  .nav .desktop_menu {
-    visibility: hidden;
-  }
-}
-
-.nav #logo_link {
-  color: #cccccc;
-}
-
-.nav #logo_link:hover {
-  color: #f2f2f2;
-}
-
-.nav #logo_link p {
-  font-size: 2rem;
-  font-weight: bolder;
-}
-
-.nav #logo_link span {
-  color: #CF5C36;
-  font-size: 2rem;
-  margin-top: .4rem;
-  margin-left: .1rem;
-}
-
-.nav #logo_link span:hover {
-  color: #ff5029;
-}
-
-.nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.nav ul li {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  list-style: none;
-}
-
-@media (max-width: 63.9375em) {
-  .nav ul li {
-    margin-left: .4rem;
-    margin-right: .4rem;
-  }
-}
-
-.nav ul li a {
-  color: #cccccc;
-}
-
-.nav ul li a:hover {
-  color: #f2f2f2;
-}
-
-.nav ul li:nth-child(4) a {
-  color: #CF5C36;
-}
-
-.nav ul li:nth-child(4) a:hover {
-  color: #ff5029;
+nav {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .hero {
@@ -230,46 +163,6 @@ button:hover {
   margin-top: 3rem;
 }
 
-.services {
-  background-color: #1a1a1a;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  height: 60vh;
-}
-
-.services h2 {
-  color: #f2f2f2;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.services h4 {
-  color: #f2f2f2;
-  text-align: center;
-}
-
-.services p {
-  color: #cccccc;
-  text-align: center;
-}
-
-.testimonial {
-  margin-top: 3rem;
-}
-
-.testimonial figure {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-.testimonial blockquote h3::before {
-  content: '\201C';
-}
-
-.testimonial blockquote h3::after {
-  content: '\201D';
-}
-
 .about-me {
   position: absolute;
   top: 20%;
@@ -288,5 +181,15 @@ footer .footer_links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.portfolio {
+  position: absolute;
+  top: 20%;
+}
+
+.digital-world {
+  position: absolute;
+  top: 20%;
 }
 /*# sourceMappingURL=style.css.map */
